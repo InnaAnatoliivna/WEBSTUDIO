@@ -55,10 +55,15 @@
         justify-content: start;
         gap: 24px;
         flex-direction: row;
+        fw
     }
     .footer-input {
         width: 264px;
         margin-right: 24px;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: row;
     }
 /*-----------------MENU-------------------*/
     .menu-list {

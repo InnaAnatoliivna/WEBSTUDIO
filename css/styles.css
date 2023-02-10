@@ -541,12 +541,14 @@ img {
   fill: var(--typical-color);
 }
 
+
+.footer-form-wrap {
+  width: 100%;
+}
+
 .footer-form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  min-width: 100%;
 }
 
 .footer-form-text {
