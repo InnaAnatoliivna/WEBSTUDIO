@@ -20,6 +20,12 @@
     .menu-list {
         margin-right: 119px;
     }
+
+/*--------------CUSTOMERS--------------*/
+    .mini-container.customers-container, 
+    .mini-container.footer-container {
+        max-width: 426px;
+    }
 /*--------------FOOTER-----------------*/
     .footer-logo,
     .footer-soc-text,
