@@ -1,0 +1,41 @@
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 426px;
+    }
+/* -------------HEADER-----------------*/
+/*--------------HERO-------------------*/
+    .hero {
+        background-image: var(--gradient), url(../images/hero-bg-tab.jpg);
+    }
+    .hero-container {
+        max-width: 396px;
+    }
+/*-------------FEATURES----------------*/
+/*--------------ABOUT------------------*/
+/*--------------TEAM-------------------*/
+/*--------------CUSTOMERS--------------*/
+/*--------------FOOTER-----------------*/
+/*--------------MENU-------------------*/
+/*------------- MODAL -----------------*/
+/*------------- FORM ------------------*/
+}
+@media screen and (max-width: 767px) {
+/*-------------FEATURES----------------*/
+    .features-subtitle {
+        text-align: center;
+    }
+/*---------------MENU------------------*/
+    .menu-list {
+        margin-right: 119px;
+    }
+/*--------------FOOTER-----------------*/
+    .footer-logo,
+    .footer-soc-text,
+    .footer-form-text {
+        justify-content: center;
+    }
+    .footer-form {
+        gap: 16px;
+    }
+
+}
