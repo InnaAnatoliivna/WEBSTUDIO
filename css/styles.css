@@ -468,9 +468,9 @@ img {
   align-items: center;
 }
 
-.footer-container:not(:last-child) {
-  align-items: center;
-}
+/* .footer-left-container {
+  max-width: 50%;
+} */
 
 .footer-logo {
   display: flex;
@@ -539,11 +539,6 @@ img {
   width: 24px;
   height: 24px;
   fill: var(--typical-color);
-}
-
-
-.footer-form-wrap {
-  width: 100%;
 }
 
 .footer-form {
