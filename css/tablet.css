@@ -105,6 +105,14 @@
     padding-bottom: 110px;
     background-image: var(--gradient), url(../images/hero-bg.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--gradient), url(../images/hero-bg-2x.jpg);
+        }
+    }
+
   .hero-title {
     max-width: 500px;
     margin-bottom: 40px;

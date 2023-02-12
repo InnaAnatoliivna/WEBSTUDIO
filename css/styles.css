@@ -252,6 +252,14 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+
 
 .hero-container {
   padding: 0;
