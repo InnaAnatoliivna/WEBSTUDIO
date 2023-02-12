@@ -52,7 +52,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-    
+
     background-color: var(--typical-color);
   }
   /*------------ABOUT------------------*/
@@ -129,6 +129,4 @@
   .gallery-item {
     width: calc((100% - 48px) / 3);
   }
-  /*------------ MODAL -----------------*/
-  /*------------ FORM ------------------*/
 }
