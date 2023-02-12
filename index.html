@@ -15,9 +15,9 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/desktop.css">
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -57,27 +57,31 @@
         </address>
         <button type="button" class="mob-menu-open btn">
           <svg class="menu-open-icon" width="32" height="22">
-            <use href="./images/symbol-defs-icon.svg#icon-mobile-menu-open"></use>
+            <use
+              href="./images/symbol-defs-icon.svg#icon-mobile-menu-open"
+            ></use>
           </svg>
         </button>
       </div>
       <div class="mob-menu-wrap">
-        <div class="container">
+        <div class="container menu-container">
           <div>
-            <button class="btn-modal-close btn" data-modal-close type="button">
-              <svg class="close-icon" width="8" height="8">
-                <use href="./images/symbol-defs-icon.svg#icon-modal-close"></use>
+            <button class="btn-mob-menu-close btn" type="button">
+              <svg class="close-mob-menu-icon" width="8" height="8">
+                <use
+                  href="./images/symbol-defs-icon.svg#icon-modal-close"
+                ></use>
               </svg>
             </button>
             <nav class="mob-menu-nav">
               <ul class="mob-menu-list list">
                 <li class="mob-menu-item">
-                  <a href="./index.html" class="link mob-menu-link"
-                    >Studio</a
-                  >
+                  <a href="./index.html" class="link mob-menu-link">Studio</a>
                 </li>
                 <li class="mob-menu-item">
-                  <a href="./portfolio.html" class="link mob-menu-link">Portfolio</a>
+                  <a href="./portfolio.html" class="link mob-menu-link"
+                    >Portfolio</a
+                  >
                 </li>
                 <li class="mob-menu-item">
                   <a href="" class="link mob-menu-link">Contacts</a>
@@ -94,7 +98,9 @@
                   >
                 </li>
                 <li class="mob-menu-address-item">
-                  <a href="mailto:info@devstudio.com" class="mob-menu-link-address link"
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-menu-link-address link"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -104,7 +110,8 @@
               <li class="mob-soc-item">
                 <a href="https://www.instagram.com/" class="mob-soc-link link">
                   <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/symbol-defs-icon.svg#icon-instagram"
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-instagram"
                     ></use>
                   </svg>
                 </a>
@@ -112,21 +119,27 @@
               <li class="mob-soc-item">
                 <a href="https://twitter.com/" class="mob-soc-link link">
                   <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/symbol-defs-icon.svg#icon-twitter"></use>
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-twitter"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="mob-soc-item">
                 <a href="https://www.facebook.com/" class="mob-soc-link link">
                   <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/symbol-defs-icon.svg#icon-facebook"></use>
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-facebook"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="mob-soc-item">
                 <a href="https://www.linkedin.com/" class="mob-soc-link link">
                   <svg class="mob-soc-icon" width="24" height="24">
-                    <use href="./images/symbol-defs-icon.svg#icon-linkedin"></use>
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-linkedin"
+                    ></use>
                   </svg>
                 </a>
               </li>
@@ -608,10 +621,19 @@
         <div class="footer-form-wrap">
           <p class="footer-form-text">Subscribe</p>
           <form action="#" class="footer-form">
-            <input type="email" name="user-email" id="email" class="footer-input" placeholder="E-mail">
-            <button type="submit" class="footer-form-btn btn">Subscribe
+            <input
+              type="email"
+              name="user-email"
+              id="email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn btn">
+              Subscribe
               <svg class="footer-form-icon" width="24" height="24">
-                <use href="./images/symbol-defs-icon.svg#icon-footer-btn-icon"></use>
+                <use
+                  href="./images/symbol-defs-icon.svg#icon-footer-btn-icon"
+                ></use>
               </svg>
             </button>
           </form>
@@ -628,33 +650,57 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <!------FORM------------------->
         <form action="#">
-            <label for="user-name" class="modal-input-text">Name</label>
-            <div class="modal-input-wrap">
-              <input type="text" class="modal-input" id="user-name" required>
-              <svg class="modal-input-icon" width="18" height="18">
-                <use href="./images/symbol-defs-icon.svg#icon-modal-person"></use>
-              </svg>
-            </div>
-            <label for="user-name" class="modal-input-text">Phone</label>
-            <div class="modal-input-wrap">
-              <input type="text" name="user-name" class="modal-input" id="user-name" required>
-              <svg class="modal-input-icon user" width="18" height="24">
-                <use href="./images/symbol-defs-icon.svg#icon-modal-phone"></use>
-              </svg>
-            </div>
-            <label for="user-email" class="modal-input-text">Email</label>
-            <div class="modal-input-wrap">
-              <input type="email" name="user-email" class="modal-input" id="user-email"required>
-              <svg class="modal-input-icon user" width="18" height="24">
-                <use href="./images/symbol-defs-icon.svg#icon-modal-email"></use>
-              </svg>
-            </div>
+          <label for="user-name" class="modal-input-text">Name</label>
+          <div class="modal-input-wrap">
+            <input type="text" class="modal-input" id="user-name" required />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/symbol-defs-icon.svg#icon-modal-person"></use>
+            </svg>
+          </div>
+          <label for="user-name" class="modal-input-text">Phone</label>
+          <div class="modal-input-wrap">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              id="user-name"
+              required
+            />
+            <svg class="modal-input-icon user" width="18" height="24">
+              <use href="./images/symbol-defs-icon.svg#icon-modal-phone"></use>
+            </svg>
+          </div>
+          <label for="user-email" class="modal-input-text">Email</label>
+          <div class="modal-input-wrap">
+            <input
+              type="email"
+              name="user-email"
+              class="modal-input"
+              id="user-email"
+              required
+            />
+            <svg class="modal-input-icon user" width="18" height="24">
+              <use href="./images/symbol-defs-icon.svg#icon-modal-email"></use>
+            </svg>
+          </div>
           <div class="modal-textarea-wrap">
             <label for="user-text" class="modal-input-text">Comment</label>
-            <textarea type="text" class="modal-field-textarea" name="user-text" placeholder="Text input" id="user-text"></textarea>
+            <textarea
+              type="text"
+              class="modal-field-textarea"
+              name="user-text"
+              placeholder="Text input"
+              id="user-text"
+            ></textarea>
           </div>
           <div class="modal-check-wrap">
-            <input type="checkbox" class="modal-check-input visually-hidden" value="accept" id="accept" required>
+            <input
+              type="checkbox"
+              class="modal-check-input visually-hidden"
+              value="accept"
+              id="accept"
+              required
+            />
             <label for="accept" class="modal-check-text">
               I accept the terms and conditions of the
               <a href="" class="check-policy">Privacy Policy</a>
@@ -666,5 +712,6 @@
     </div>
     <!-------------------------->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

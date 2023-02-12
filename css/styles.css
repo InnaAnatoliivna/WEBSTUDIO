@@ -86,7 +86,6 @@ img {
 
 .header-wrap {
   display: flex;
-  position: relative;
 }
 
 .header-navigation {
@@ -137,7 +136,11 @@ img {
   z-index: 1;
   background-color: var(--typical-bc);
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 40px;  
+}
+
+.container.menu-container {
+  max-width: 378px;
 }
 
 .mob-menu-wrap > .container {
@@ -146,8 +149,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+
 }
 
 .mob-menu-nav {
@@ -216,8 +218,6 @@ img {
 .mob-soc-list {
   display: flex;
   gap: 56px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .mob-soc-item {
@@ -814,7 +814,8 @@ background-color: var(--accent-active-color);
   transform: translate(-50%, -50%) rotateX(90deg);
 }
 
-.btn-modal-close {
+.btn-modal-close,
+.btn-mob-menu-close {
   width: 24px;
   height: 24px;
   display: flex;
@@ -830,13 +831,20 @@ background-color: var(--accent-active-color);
   color: #000000;
 }
 
+.btn-mob-menu-close:is(:hover, :focus) {
+  background-color: var(--accent-active-color);
+  border: var(--accent-active-color);
+  color: #ffffff;
+}
+
 .btn-modal-close:is(:hover, :focus) {
   background-color: var(--accent-active-color);
   border: var(--accent-active-color);
   color: #ffffff;
 }
 
-.close-icon {
+.close-icon,
+.close-mob-menu-icon {
   fill: currentColor;
 }
 /*---------------- FORM ---------------*/
