@@ -55,7 +55,7 @@ img {
   /* max-width: 1158px; */
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .about-title,
@@ -64,6 +64,10 @@ img {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -208,7 +212,7 @@ img {
 
 .mob-menu-tel {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.1;
   color: var(--text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -223,14 +227,8 @@ img {
 .mob-soc-item {
   width: 40px;
   height: 40px;
-  padding: 8px;
-  border-radius: 50%;
-  background-color: var(--accent-pasive-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mob-soc-item:is(:hover, :focus) {
-  background-color: var(--accent-active-color);
-}
+
 
 .mob-soc-link {
   width: 100%;
@@ -238,6 +236,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  background-color: var(--accent-pasive-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc-link:is(:hover, :focus) {
+  background-color: var(--accent-active-color);
 }
 
 .mob-soc-icon {
@@ -684,6 +688,13 @@ background-color: var(--accent-active-color);
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.filter-link {
+  color: currentColor;
+}
+/* .filter-link:focus {
+  outline: none;
+} */
 
 .menu-btn:is(:hover, :focus) {
   background: var(--accent-active-color);

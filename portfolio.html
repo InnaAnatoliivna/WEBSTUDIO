@@ -29,17 +29,15 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="link link-wrap">Studio</a>
-            </li>
-            <li class="header-item">
-              <a
-                href="./portfolio.html"
-                class="link link-wrap current-portfolio"
-                >Portfolio</a
+              <a href="./index.html" class="link link-wrap"
+                >Studio</a
               >
             </li>
             <li class="header-item">
-              <a href="" class="link link-wrap">Contacts</a>
+              <a href="./portfolio.html" class="link link-wrap current-portfolio">Portfolio</a>
+            </li>
+            <li class="header-item">
+              <a href="#contacts" class="link link-wrap">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,6 +55,97 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-open btn" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use
+              href="./images/symbol-defs-icon.svg#icon-mobile-menu-open"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu-wrap is-hidden" data-menu>
+        <div class="container menu-container">
+          <div>
+            <button class="btn-mob-menu-close btn" type="button" data-menu-close>
+              <svg class="close-mob-menu-icon" width="8" height="8">
+                <use
+                  href="./images/symbol-defs-icon.svg#icon-modal-close"
+                ></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="link mob-menu-link">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="link mob-menu-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#contacts" class="link mob-menu-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-menu-address">
+              <ul class="list mob-menu-address-list">
+                <li class="mob-menu-address-item">
+                  <a href="tel:+110001111111" class="mob-menu-tel link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-address-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-menu-link-address link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="https://www.instagram.com/" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="https://twitter.com/" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="https://www.facebook.com/" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="https://www.linkedin.com/" class="mob-soc-link link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use
+                      href="./images/symbol-defs-icon.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -65,23 +154,23 @@
           <h2 class="visually-hidden">Filter</h2>
           <ul class="menu-list list">
             <li class="menu-item">
-              <button type="button" class="menu-btn btn">All</button>
+              <button type="button" class="menu-btn btn"><a href="" class="link filter-link" tabindex="-1">All</a></button>
             </li>
             <li class="menu-item">
-              <button type="button" class="menu-btn btn">Web Site</button>
+              <button type="button" class="menu-btn btn"><a href="#filter-web-site" class="link filter-link" tabindex="-1">Web Site</a></button>
             </li>
             <li class="menu-item">
-              <button type="button" class="menu-btn btn">App</button>
+              <button type="button" class="menu-btn btn"><a href="#filter-app" class="link filter-link" tabindex="-1">App</a></button>
             </li>
             <li class="menu-item">
-              <button type="button" class="menu-btn btn">Design</button>
+              <button type="button" class="menu-btn btn"><a href="#filter-design" class="link filter-link" tabindex="-1">Design</a></button>
             </li>
             <li class="menu-item">
-              <button type="button" class="menu-btn btn">Marketing</button>
+              <button type="button" class="menu-btn btn"><a href="#filter-marketing" class="link filter-link" tabindex="-1">Marketing</a></button>
             </li>
           </ul>
           <ul class="gallery-list list">
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-app">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -104,7 +193,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-marketing">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -125,7 +214,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-app">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -146,7 +235,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-marketing">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -167,7 +256,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-design">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -188,7 +277,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-marketing">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -209,7 +298,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-design">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -230,7 +319,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-web-site">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -251,7 +340,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery-item">
+            <li class="gallery-item" id="filter-web-site">
               <a href="" class="gallery-link link">
                 <div class="overlay-box">
                 <img
@@ -277,7 +366,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container mini-container">
+      <div class="container mini-container footer-container">
         <div class="footer-left-container">
           <a href="./index.html" class="footer-logo link"
             ><span class="footer-logo-row">Web</span>Studio</a
@@ -287,7 +376,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-center-container">
+        <div class="footer-center-container" id="contacts">
           <p class="footer-soc-text">Social media</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
@@ -324,16 +413,26 @@
         </div>
         <div class="footer-form-wrap">
           <p class="footer-form-text">Subscribe</p>
-          <form action="" class="footer-form">
-              <input type="email" name="useremail" id="email" class="footer-input" placeholder="E-mail">
-            <button type="submit" class="footer-form-btn btn">Subscribe
+          <form action="#" class="footer-form">
+            <input
+              type="email"
+              name="user-email"
+              id="email"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn btn">
+              Subscribe
               <svg class="footer-form-icon" width="24" height="24">
-                <use href="./images/symbol-defs-icon.svg#icon-footer-btn-icon"></use>
+                <use
+                  href="./images/symbol-defs-icon.svg#icon-footer-btn-icon"
+                ></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

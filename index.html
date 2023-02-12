@@ -37,7 +37,7 @@
               <a href="./portfolio.html" class="link link-wrap">Portfolio</a>
             </li>
             <li class="header-item">
-              <a href="" class="link link-wrap">Contacts</a>
+              <a href="#contacts" class="link link-wrap">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="mob-menu-open btn">
+        <button type="button" class="mob-menu-open btn" data-menu-open>
           <svg class="menu-open-icon" width="32" height="22">
             <use
               href="./images/symbol-defs-icon.svg#icon-mobile-menu-open"
@@ -63,10 +63,10 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu-wrap">
+      <div class="mob-menu-wrap is-hidden" data-menu>
         <div class="container menu-container">
           <div>
-            <button class="btn-mob-menu-close btn" type="button">
+            <button class="btn-mob-menu-close btn" type="button" data-menu-close>
               <svg class="close-mob-menu-icon" width="8" height="8">
                 <use
                   href="./images/symbol-defs-icon.svg#icon-modal-close"
@@ -84,7 +84,7 @@
                   >
                 </li>
                 <li class="mob-menu-item">
-                  <a href="" class="link mob-menu-link">Contacts</a>
+                  <a href="#contacts" class="link mob-menu-link">Contacts</a>
                 </li>
               </ul>
             </nav>
@@ -583,7 +583,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-center-container">
+        <div class="footer-center-container" id="contacts">
           <p class="footer-soc-text">Social media</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
