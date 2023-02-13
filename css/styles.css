@@ -159,12 +159,6 @@ img {
   padding-top: 16px;
 }
 
-.mob-menu-list {
-}
-
-.mob-menu-item {
-}
-
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -184,9 +178,6 @@ img {
 .mob-menu-address {
   font-style: normal;
   margin-bottom: 48px;
-}
-
-.mob-menu-address-list {
 }
 
 .mob-menu-address-item:not(:last-child) {
@@ -259,7 +250,6 @@ img {
     background-image: var(--gradient), url(../images/hero-bg-mob-2x.jpg);
   }
 }
-
 
 .hero-container {
   padding: 0;
@@ -438,9 +428,6 @@ img {
 
 .team-soc-icon {
   fill: var(--typical-color);
-}
-
-.icon {
 }
 
 /*--------------------CUSTOMERS-----------------*/
@@ -652,9 +639,6 @@ img {
   padding-bottom: 48px;
 }
 
-.gallery-container {
-}
-
 .menu-list {
   display: flex;
   flex-wrap: wrap;
@@ -771,12 +755,6 @@ img {
   background-color: var(--typical-bc);
 }
 
-.gallery {
-}
-
-.gallery-title {
-}
-
 /*---------------- MODAL ----------------*/
 
 .backdrop {
@@ -861,9 +839,6 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
-}
-
-.modal-container-field {
 }
 
 .modal-input-wrap {
