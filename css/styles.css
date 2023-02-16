@@ -785,7 +785,8 @@ img {
 
   transition: transform 250ms linear;
 
-  max-width:  392px;
+  width: 392px;
+  max-width: 100%;
   min-height: 576px;
   padding: 24px 16px;
 
@@ -848,7 +849,7 @@ img {
 .modal-input-wrap {
   position: relative;
   margin-bottom: 8px;
-  width: 100%;
+  max-width: 360px;
 }
 
 .modal-input-text {
@@ -906,7 +907,7 @@ img {
 
 .modal-textarea-wrap {
   margin-bottom: 16px;
-  width: 100%;
+  max-width: 360px;
 }
 
 .modal-field-textarea {
