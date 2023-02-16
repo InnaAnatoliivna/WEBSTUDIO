@@ -55,6 +55,11 @@
 
     background-color: var(--typical-color);
   }
+  .features-subtitle {
+    font-weight: var(--typical-fw);
+    font-size: 20px;
+    line-height: 1.2;
+  }
   /*------------ABOUT------------------*/
   .about {
     display: block;
@@ -129,4 +134,8 @@
   .gallery-item {
     width: calc((100% - 48px) / 3);
   }
+  /*------------- MODAL -----------------*/
+  .modal {
+  top: 80px;
+}
 }

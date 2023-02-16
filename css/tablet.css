@@ -179,13 +179,22 @@
   .gallery-item {
     width: calc((100% - 24px) / 2);
   }
+  /*------------- MODAL -----------------*/
+  .modal {
+  max-width: 408px;
+  padding: 24px;
+  top: 96px;
+  transform: translate(-50%) rotateX(0);
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     column-gap: 24px;
   }
-}
 .address-item:not(:last-child) {
   margin-bottom: 4px;
 }
+
+}
+

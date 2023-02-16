@@ -49,9 +49,4 @@
   .footer-form-btn {
     margin: 0 auto;
   }
-  /*------------MODAL------------*/
-  .modal {
-    max-width: 392px;
-    padding: 24px 16px;
-  }
 }
